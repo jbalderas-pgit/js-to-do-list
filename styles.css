@@ -1,0 +1,93 @@
+:root {
+  --text-color: #1a1c20;
+  --link-color: #4a76ee;
+  --background-color: #eeeff1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-color: var(--background-color);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+
+nav .left a{
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+
+}
+
+nav .right a{
+    color: var(--text-color);
+    margin: 0 10px;
+
+}
+
+nav .right a:last-child{
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav .right a span{
+    margin-left: 5px;
+}
+
+.enter-task-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin: 50px 0;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+
+.submit-task-btn{
+    font-family: 'Noto Sans', sans-serif;
+    background-color: transparent;
+    border: 1px solid var(--link-color);
+    color: var(--link-color);
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.2s ease;
+}
+
+.submit-task-btn:hover{
+    background-color: var(--link-color)
+    color(#fff);
+}
+
+.view-task-section{
+  padding: 0 50px;
+  margin-bottom: 20px;
+}
+
+

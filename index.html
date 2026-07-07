@@ -1,0 +1,72 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/styles.css"/>
+
+    <title>To-Do List</title>
+    
+  </head>
+  <body>
+
+    <nav>
+      <div class="left">
+        <a href="/">Welcome to my To-Do List web app!</a>
+        <span>Check out my other projects -></span>
+      </div>
+
+      <div class="right"> 
+        <a href="https://github.com/jbalderas-pgit/" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github"></i>
+          <span>Github</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/juan-balderas-solorzano/" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+
+        <a href="mailto:jbalderas0314@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email</span>
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <section id="enterTask" class="enter-task-section">
+        <div class="group">
+          <form>
+            <label for="task">Enter task here: </label>
+            <input type="text" name="" id="task">
+            <button class="submit-task-btn" type="submit">Add Task</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="viewTask" class="view-task-section">
+        <div class="group">
+          <p>Current Tasks: </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
