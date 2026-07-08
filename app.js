@@ -15,10 +15,27 @@ document.addEventListener('DOMContentLoaded', ()=>{
         const newTaskField = document.querySelector("#newTask").value;
         //log user input for debug
         console.log(newTaskField);
-        //add to currentTasks array
-        currentTasks.push(newTaskField);
-        //empty user input field
-        document.querySelector("#newTask").value = "";
+
+        //check if input is valid
+        if(newTaskField != ""){
+            //add to currentTasks array
+            currentTasks.push(newTaskField);
+            //empty user input field
+            document.querySelector("#newTask").value = "";
+
+            //create parent element variable
+            const currentList = document.querySelector("#taskList");
+            //create new tag for task
+            const newTask = document.createElement("li");
+            //add user input to tag
+            newTask.textContent = newTaskField;
+            //append new element to parent
+            currentList.appendChild(newTask);            
+        }
+        else{
+            alert("Please enter a task to add.");
+        }
+
     });
 
 });
